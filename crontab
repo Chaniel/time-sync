@@ -1,2 +1,7 @@
-0 */1 * * * /usr/sbin/ntpdate -u 172.17.4.44 > /dev/null
+# use local time server
+0 */1 * * * /usr/sbin/ntpdate -u 172.17.1.254 > /dev/null
+0 */1 * * * /sbin/hwclock -w
+
+# or use network time server
+0 */1 * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null
 0 */1 * * * /sbin/hwclock -w
