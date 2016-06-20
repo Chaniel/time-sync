@@ -1,0 +1,3 @@
+http://www.cnblogs.com/kerrycode/p/4217995.html
+
+ cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime 
