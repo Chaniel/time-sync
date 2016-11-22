@@ -1,3 +1,7 @@
 http://www.cnblogs.com/kerrycode/p/4217995.html
 
- cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime 
+# hong_kong beijing shanghai
+cp /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime
+
+
+cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime 
