@@ -1,7 +1,7 @@
-# use local time server
-0 */1 * * * /usr/sbin/ntpdate -u 172.17.1.254 > /dev/null
-0 */1 * * * /sbin/hwclock -w
+# use local time server, every 3 minutes
+*/3 * * * * /usr/sbin/ntpdate -u 172.17.1.254 > /dev/null
+*/3 * * * * /sbin/hwclock -w
 
-# or use network time server
-0 */1 * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null
-0 */1 * * * /sbin/hwclock -w
+# or use network time server, every 3 minutes
+*/3 * * * * /usr/sbin/ntpdate -u cn.pool.ntp.org > /dev/null
+*/3 * * * * /sbin/hwclock -w
